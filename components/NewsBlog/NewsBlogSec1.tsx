@@ -57,7 +57,7 @@ const NewsBlogSec1 = () => {
                 <motion.span className="font-bold text-4xl lg:text-6xl lg:pt-8 text-center text-white">{ displayText }</motion.span>
                 <CursorBlinker />
               </span>
-              <h2 className="font-semibold text-sm sm:text-xl lg:text-2xl pt-4 pb-2 lg:pb-4 text-center text-white">Nơi cập nhật tất cả tin tức, hoạt động mới nhất từ Ahamove và các đối tác.</h2>
+              <h2 className="font-semibold text-sm sm:text-xl lg:text-2xl pt-4 pb-2 lg:pb-4 text-center text-white">Nơi cập nhật tất cả tin tức, hoạt động mới nhất từ TDLogistics và các đối tác.</h2>
           </div>
           <div className="flex flex-wrap w-full justify-center">
             <ButtonLink href="#allnews" buttonText="Tất cả tin tức"/>
