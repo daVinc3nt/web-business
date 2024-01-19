@@ -10,7 +10,7 @@ const Portfolio = () => {
           <Image
             src="https://images.unsplash.com/photo-1520595439914-fcbb3a25d924?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
             alt="/"
-            layout="responsive"
+            
             width="677"
             height="451"
           />
@@ -21,8 +21,8 @@ const Portfolio = () => {
             alt="/"
             width="215"
             height="217"
-            layout="responsive"
-            objectFit="cover"
+            
+            style={{objectFit:"cover"}}
           />
         </div>
         <div className="w-full h-full">
@@ -31,8 +31,8 @@ const Portfolio = () => {
             alt="/"
             width="215"
             height="217"
-            layout="responsive"
-            objectFit="cover"
+            
+            style={{objectFit:"cover"}}
           />
         </div>
         <div className="w-full h-full">
@@ -41,8 +41,8 @@ const Portfolio = () => {
             alt="/"
             width="215"
             height="217"
-            layout="responsive"
-            objectFit="cover"
+            
+            style={{objectFit:"cover"}}
           />
         </div>
         <div className="w-full h-full">
@@ -51,8 +51,8 @@ const Portfolio = () => {
             alt="/"
             width="215"
             height="217"
-            layout="responsive"
-            objectFit="cover"
+            
+            style={{objectFit:"cover"}}
           />
         </div>
       </div>

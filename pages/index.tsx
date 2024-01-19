@@ -6,23 +6,28 @@ import { SliderData } from "../components/Slider/SliderData";
 import Instagram from "../components/InstagramGallery/Instagram";
 import Portfolio from "../components/Portfolio/Portfolio";
 import Contact from "../components/Contact/Contact";
-
+import { useIntl } from "react-intl";
 const Home: NextPage = () => {
+  const intl = useIntl();
   return (
+    //things shall be on navbar menu
     <>
+    <div className="overflow-y-scroll no-scrollbar">
       <Head>
-        <title>Keep moving</title>
+        <title>TDLogistics</title>
         <meta
           name="description"
           content="Created as template for future work"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero heading="Let's go jogging" message="Find your road" />
+      <Hero heading={intl.formatMessage({ id: 'NavBar.home.hello' })} 
+            message={intl.formatMessage({ id: 'NavBar.home.sologan' })} />
       <Slider slides={SliderData} />
       <Instagram />
       <Portfolio />
       <Contact />
+    </div>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import NavBar from "../components/NavigationBar/NavBar";
+import Navbar from "@/components/nav/nav";
 import { useRouter } from "next/router";
 import { IntlProvider } from "react-intl";
 import * as en from "@/lang/en.json";
@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <IntlProvider locale={locale} messages={messages[locale]}>
-        <NavBar />
+        <Navbar />
         <Component {...pageProps} />
       </IntlProvider>
     </>

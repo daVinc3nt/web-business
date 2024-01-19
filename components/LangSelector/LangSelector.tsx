@@ -9,9 +9,12 @@ import {
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
+import React from 'react';
 import { IntlProvider, useIntl } from "react-intl";
-
-const LangSelector = () => {
+interface Props {
+  IconColor: string;
+}
+const LangSelector: React.FC<Props>  = ({IconColor}) => {
   const Name2CountryCode: { [key: string]: string } = {
     "English": "en",
     "Tiếng Việt": "vi",
@@ -46,12 +49,12 @@ const LangSelector = () => {
       <motion.div animate={open ? "open" : "closed"} className="relative z-10">
         <button
           id="langRefButton" ref={langRef} onClick={() => setOpen((pv) => !pv)}
-          className="flex items-center h-5/6 mt-[0.23rem] z-50 gap-4 px-3 rounded-lg w-20 text-indigo-50 bg-red-600 hover:bg-red-700 transition-colors relative border-2 border-white"
+          className="flex items-center z-50 gap-4 px-3 rounded-lg text-indigo-50"
         >
           <div id="langRefButton" className="absolute bg-transparent w-full h-full"></div>
-          <FiGlobe size={30} />
+          <FiGlobe color={IconColor}  size={30} strokeWidth="1.5"/>
           <motion.span variants={iconVariants}>
-            <FiChevronDown />
+            <FiChevronDown color={IconColor}/>
           </motion.span>
         </button>
 
@@ -75,7 +78,7 @@ const Option = ({ text, Icon, handle }) => {
       variants={itemVariants}
       transition={{ duration: 0.1 }}
       onClick={() => { handle(text) }}
-      className="flex z-50 items-center gap-2 w-full py-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-indigo-100 text-slate-700 hover:text-indigo-500 transition-colors cursor-pointer"
+      className="flex z-50 items-center gap-2 w-full py-2 text-xs font-medium whitespace-nowrap rounded-lg hover:bg-indigo-100 text-slate-700 hover:text-indigo-500 transition-colors cursor-pointer"
     >
       <motion.span variants={actionIconVariants} >
       </motion.span>
