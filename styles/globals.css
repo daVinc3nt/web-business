@@ -2,11 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+}
+
 html {
     scroll-behavior: smooth;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
 }
 
 .custom-img {
-    background-image: url("/public/Blog7.jpg");
+    background-image: url(/shipper.jpg)
+}
+
+.spin-button-none::-webkit-outer-spin-button,
+.spin-button-none::-webkit-inner-spin-button { 
+    appearance: none;
 }

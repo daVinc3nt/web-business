@@ -6,8 +6,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs : '360px',
+        s : '425px',
+      },
       backgroundImage: {
         mainpage: 'url("/blog7.jpg")',
+      },
+      colors:{
+        newsBgColor:{
+          default: "#E8EAED"
+        },
       }
     },
   },
