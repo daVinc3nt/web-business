@@ -54,7 +54,9 @@ const NewsBlogSec1 = () => {
           className="relative p-4 rounded-3xl h-full w-full">
           <div className="flex flex-col mx-auto h-full w-full">
               <span className="self-center lg:pb-4">
-                <motion.span className="font-bold text-4xl lg:text-6xl lg:pt-8 text-center text-white">{ displayText }</motion.span>
+                <motion.span className="font-bold text-4xl lg:text-6xl lg:pt-8 text-center text-white">
+                  { displayText }
+                </motion.span>
                 <CursorBlinker />
               </span>
               <h2 className="font-semibold text-sm sm:text-xl lg:text-2xl pt-4 pb-2 lg:pb-4 text-center text-white">Nơi cập nhật tất cả tin tức, hoạt động mới nhất từ TDLogistics và các đối tác.</h2>

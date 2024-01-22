@@ -7,6 +7,7 @@ import Instagram from "../components/InstagramGallery/Instagram";
 import Portfolio from "../components/Portfolio/Portfolio";
 import Contact from "../components/Contact/Contact";
 import { useIntl } from "react-intl";
+import Zigzag from "@/components/Zigzag/zigzag";
 const Home: NextPage = () => {
   const intl = useIntl();
   return (
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       <Hero heading={intl.formatMessage({ id: 'NavBar.home.hello' })} 
             message={intl.formatMessage({ id: 'NavBar.home.sologan' })} />
       <Slider slides={SliderData} />
+      <Zigzag/>
       <Instagram />
       <Portfolio />
       <Contact />
