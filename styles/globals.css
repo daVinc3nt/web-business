@@ -15,3 +15,7 @@ html {
 .custom-img {
     background-image: url("/public/Blog7.jpg");
 }
+
+.react-multi-carousel-list{
+    position: unset !important;
+  }
