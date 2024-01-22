@@ -92,3 +92,6 @@ html {
         transform: translate3d(10px, 0, 0) scale(1.2);
     }
 }
+.react-multi-carousel-list{
+    position: unset !important;
+  }
