@@ -75,7 +75,7 @@ const NewsBlogSec1 = () => {
               <CursorBlinker />
             </span>
             <div className="relative pb-4">
-              <div className="relative font-semibold text-sm sm:text-xl lg:text-2xl text-center text-white">
+              <div className="relative font-thin text-sm sm:text-xl lg:text-2xl text-center text-white">
                 <FormattedMessage id="NewsBlog.MainPage.subTitle"/>
               </div>
             </div>

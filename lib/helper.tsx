@@ -16,7 +16,6 @@ export default async function getPost(id: number|null) {
 
     return posts;
   } catch (error) {
-    console.error("Error in getPost:", error.message);
     throw error;
   }
 }

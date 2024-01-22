@@ -37,8 +37,8 @@ export default function NavMenu({ items, depthLevel, textColor }) {
         >
           {items.submenu?.map((menu, index)=>{
           return (
-          <Link role="menuitem" href={menu.url}>
-            <MenuItem key={index}> 
+          <Link role="menuitem" href={menu.url} key={index}>
+            <MenuItem> 
                 {menu.title}
             </MenuItem>
           </Link>)
