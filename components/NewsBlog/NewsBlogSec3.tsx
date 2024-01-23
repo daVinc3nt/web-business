@@ -97,7 +97,7 @@ const NewsBlogSec3 = ({category, id, title}) => {
               slidesToSlide={breakpoints[breakpoint]}
               containerClass="h-full grow w-full rounded-2xl"
             >
-              {sortPosts.slice(0, 20).map((post) => (
+              {sortPosts.slice(0, 10).map((post) => (
                 <div key={post.id} className="h-64 bg-white rounded-xl mx-2">
                   <Link href={`/news/${post.id}`}>
                     <div

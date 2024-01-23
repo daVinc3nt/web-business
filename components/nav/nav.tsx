@@ -3,8 +3,8 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import LangSelector from "../LangSelector/LangSelector";
-import { FormattedMessage, useIntl } from "react-intl";
-
+import { FormattedMessage, useIntl } from "react-intl"
+import MenuHambuger from "./MenuHambuger";
 const Navbar = () => {
   const intl = useIntl();
 
@@ -100,13 +100,7 @@ const Navbar = () => {
         </ul>
         <div className="flex items-center">
           <LangSelector IconColor={textColor}/>
-            <div onClick={handleNav} className="block sm:hidden z-10">
-              {nav ? (
-                <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
-              ) : (
-                <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
-              )}
-            </div>
+          <MenuHambuger  toggle ={handleNav}/>
           </div>
       </div>
     </div>

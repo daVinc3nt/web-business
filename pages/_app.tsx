@@ -8,6 +8,7 @@ import * as en from "@/lang/en.json";
 import * as vi from "@/lang/vi.json";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Wrapper from "@/components/LayoutWrapper";
 function MyApp({ Component, pageProps }: AppProps) {
   function Loading() {
     const router = useRouter();
@@ -59,9 +60,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <IntlProvider locale={locale} messages={messages[locale]}>
-        <Navbar />
-        <Loading />
-        <Component {...pageProps} />
+        <Wrapper>
+          <Loading />
+          <Component {...pageProps} />
+        </Wrapper>
       </IntlProvider>
     </>
   );

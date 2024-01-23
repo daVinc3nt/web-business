@@ -129,7 +129,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
                   initial="hidden"
                   animate={mainControls}
                   transition={{ duration: 0.7, delay: 0.65 }}
-                  className="text-gray-800 pt-2 lg:pt-0">
+                  className="text-gray-800 pt-2 lg:pt-0 text-justify">
                   <p>{post?.description}</p>
                 </motion.div>
                 <motion.div 

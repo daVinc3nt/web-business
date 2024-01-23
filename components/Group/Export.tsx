@@ -42,7 +42,7 @@ const ExportGroup = () => {
           </div>
         </div>
         <div className="grid md:grid-cols-2 gap-10 mt-20 md:mx-20 mx-10">
-          <div className="textcomponent ">
+          <div className="textcomponent " data-aos="zoom-in-down">
             <svg
               viewBox="0 0 1024 1024"
               className="icon"
@@ -97,7 +97,7 @@ const ExportGroup = () => {
               dùng và chủ doanh nghiệp.
             </div>
           </div>
-          <div>
+          <div data-aos="zoom-in-down">
             <svg
               viewBox="0 0 1024 1024"
               className="icon"
