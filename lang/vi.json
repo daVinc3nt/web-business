@@ -28,6 +28,81 @@
     "NewsBlog.Blog3.title2":"Khách hàng",
     "NewsBlog.Blog3.title3":"Tài xế",
     "NewsBlog.Blog3.title4":"Đối tác",
-    "NewsBlog.Blog3.title5":"Đồng hành cùng thương hiệu"
+    "NewsBlog.Blog3.title5":"Đồng hành cùng thương hiệu",
+
+    "AboutUs.MainPage.title": "VỀ CHÚNG TÔI",
+    "AboutUs.MainPage.findoutmore": "Tìm hiểu thêm",
+
+    "PriceList.MainPage.title": "BẢNG GIÁ BẢNG GIÁ DỊCH VỤ CHUYỂN PHÁT TOÀN QUỐC",
+    "PriceList.MainPage.subTitle": "( Áp dụng cho 63 tỉnh/ thành phố trên toàn quốc)",
+
+    "PriceList.MainPage.option1": "BẢNG GIÁ DỊCH VỤ CHUYỂN PHÁT NHANH TOÀN QUỐC (Mã: CPN)",
+    "PriceList.MainPage.option1.subTitle1": "1. Bảng giá chuyển phát nhanh: Áp dụng đối với bưu gửi có trọng lượng đến 05 Kg",
+    "PriceList.MainPage.option1.subTitle1.sub1": "Nội tỉnh",
+    "PriceList.MainPage.option1.subTitle1.sub1.table.head1": "Trọng lượng (gram) ",
+    "PriceList.MainPage.option1.subTitle1.sub1.table.head2": "Giá cước (VNĐ) ",
+    "PriceList.MainPage.option1.subTitle1.sub1.table.head3": " Mỗi 500 gram tiếp theo",
+    "PriceList.MainPage.option1.subTitle1.sub1.table.head4": "Thời gian toàn trình",
+    "PriceList.MainPage.option1.subTitle1.sub2": "Liên tỉnh",
+    "PriceList.MainPage.option1.subTitle1.warning1":"Lưu ý: Công ty làm việc liên tục 365/365 ngày, không trừ ngày thứ 7,chủ nhật, nghỉ lễ, tết theo quy định. Nếu Người sử dụng dịch vụ bưu chính yêu cầu thì Công ty cũng không thu thêm phí dịch vụ",
+    "PriceList.MainPage.option1.subTitle1.warning2":"• Chỉ tiêu thời gian toàn trình: Thời gian toàn trình nêu tại bảng giá trên không trừ ngày thứ 7, chủ nhật, nghỉ lễ, tết theo quy định nếu Người sử dụng dịch vụ bưu chính yêu cầu.",
+    "PriceList.MainPage.option1.subTitle1.warning3":"• Địa danh giao nhận của dịch vụ chuyển phát nhanh ( Mã CPN) áp dụng là các địa chỉ thuộc thành phố là trung tâm hành chính các tỉnh/ thành phố trực thuộc trung ương trên toàn quốc",
+    "PriceList.MainPage.option1.subTitle1.warning4":"• Khoảng cách từ địa danh khách hàng gửi bưu gửi đến địa danh phát bưu gửi cho người nhận được tính bằng số Km và xác định bằng phần mềm Google Maps do Giao dịch viên, Bưu tá công bố và được thống nhất với khách hàng.",
+    "PriceList.MainPage.option1.subTitle1.warning5":" • Đối với tuyến huyện, xã không thuộc vùng sâu, vùng xa, Giá cước áp dụng bảng giá cước nêu tại Mục 1của bảng giá này và được cộng thêm 20% so với giá cước đã nêu tại Mục 1. Thời gian toàn trình là thời gian áp dụng tại Mục 1của bảng giá này và được cộng thêm 12 giờ so với thời gian toàn trình đã nêu tại Mục 1",
+    "PriceList.MainPage.option1.subTitle1.warning6":"• Đối với tuyến huyện, xã thuộc vùng sâu, vùng xa khách hàng sử dụng dịch vụ chuyển phát và có sự thỏa thuận, đồng ý trước giữa Công ty và Người sử dụng dịch vụ về giá cước và thời gian toàn trình nhưng vẫn đảm bảo các quy định của pháp luật hiện hành.",
+    
+    "PriceList.MainPage.option1.subTitle2": "2. Dịch vụ gia tăng:",
+    "PriceList.MainPage.option1.subTitle2.table.head1": "CHUYỂN PHÁT 60 GIỜ (Mã T60)",
+    "PriceList.MainPage.option1.subTitle2.table.head2": " Bằng 60% giá cước CPN",
+    "PriceList.MainPage.option1.subTitle2.table.North": "Miền Bắc: ",
+    "PriceList.MainPage.option1.subTitle2.table.Mid":"Miền Trung:",
+    "PriceList.MainPage.option1.subTitle2.table.South":"Miền Nam: ",
+    "PriceList.MainPage.option1.subTitle2.warning1":"Chú ý: Địa danh giao nhận của dịch vụ 60 giờ áp dụng là các địa chỉ thuộc thành phố là trung tâm hành chính tỉnh/ thành phố trực thuộc trung ương được nêu tại bảng giá này.",
+    "PriceList.MainPage.option1.subTitle2.warning2":"+Đối với tuyến huyện, xã không thuộc vùng sâu, vùng xa, Giá cước áp dụng bảng giá cước nêu tại Mục 2 (Mã T60) của bảng giá này và được cộng thêm 20% so với giá cước đã nêu tại Mục 2 (Mã T60) của bảng giá này. Thời gian toàn trình là thời gian áp dụng cho dịch vụ chuyển phát 60 giờ (T60) được công thêm 16 giờ.",
+    "PriceList.MainPage.option1.subTitle2.warning3":"+ Đối với tuyến huyện, xã thuộc vùng sâu, vùng xa khách hàng sử dụng dịch vụ chuyển phát và có sự thỏa thuận, đồng ý trước giữa công ty và người sử dụng dịch vụ về giá cước và thời gian toàn trình nhưng vẫn đảm bảo các quy định của pháp luật hiện hành.",
+    "PriceList.MainPage.option1.subTitle2.warning4": "+ Đối với các tỉnh/ thành phố không thuộc địa danh giao nhận của dịch vụ chuyển phát 60 giờ vẫn được cung cấp dịch vụ 60 giờ + với giá cước và thời gian như sau:",
+    "PriceList.MainPage.option1.subTitle2.warning5": "- Giá cước: áp dụng tương tự như các địa danh được nêu trong bảng giá chuyển phát 60 giờ.",
+    "PriceList.MainPage.option1.subTitle2.warning6": "- Thời gian toàn trình: Đến trung tâm hành chính tỉnh/ thành phố được công thêm tối đa 24h (60h + 24h). Đối với tuyến huyện, xã không thuộc vùng sâu, vùng xa thời gian được công thêm tối đa 12 giờ (60 h+24 h+12h).",
+    "PriceList.MainPage.option1.subTitle2.warning7": "- Đối với tuyến huyện, xã thuộc vùng sâu, vùng xa khách hàng sử dụng dịch vụ chuyển phát và có sự thỏa thuận, đồng ý trước giữa Công ty và Người sử dụng dịch vụ về giá cước và thời gian toàn trình nhưng vẫn đảm bảo các quy định của pháp luật hiện hành.",
+
+    "PriceList.MainPage.option1.subTitle3": "3. Ghi chú",
+    "PriceList.MainPage.option1.subTitle3.warning1": "• Đối với dịch vụ chuyển phát nhanh (Mã CPN), dịch vụ gia tăng (Mã T60): Trọng lượng được quy đổi theo công thức: Số đo (cm): (Dài x Rộng x Cao) ÷ 6000 = Trọng lượng (kg).",
+    "PriceList.MainPage.option1.subTitle3.warning2": "• Giá trên chưa bao gồm phụ phí nhiên liệu và thuế VAT (10%).",
+    
+    "PriceList.MainPage.option2": "BẢNG GIÁ DỊCH VỤ CHUYỂN PHÁT TIẾT KIỆM ( Mã :TTK)",
+    "PriceList.MainPage.option2.subTitle1": "1. Bảng giá chuyển phát tiết kiệm :",
+    "PriceList.MainPage.option2.subTitle1.sub1": "Tất cả các tỉnh, thành phố",
+    "PriceList.MainPage.option2.subTitle1.table.head1": "Trọng lượng (gram) ", 
+    "PriceList.MainPage.option2.subTitle1.table.head2": "NỘI VÙNG",
+    "PriceList.MainPage.option2.subTitle1.table.head3": "CẬN VÙNG",
+    "PriceList.MainPage.option2.subTitle1.table.head4": "CÁCH VÙNG",
+    "PriceList.MainPage.option2.subTitle1.sub2": "Mỗi KG tiếp theo",
+
+    "PriceList.MainPage.option2.subTitle2": "2. Địa danh giao nhận: ",
+    "PriceList.MainPage.option2.subTitle2.sub1": ": là địa danh các bưu gửi có địa chỉ nhận và giao thuộc hai tỉnh khác nhau cùng trong 1 miền (Miền Bắc, Miền Trung, Miền Nam)",
+    "PriceList.MainPage.option2.subTitle2.sub2": ": là địa danh các bưu gửi có địa chỉ nhận thuộc Miền Bắc, địa chỉ giao thuộc Miền Trung và ngược lại; hoặc địa chỉ nhận tại Miền Trung, địa chỉ giao tại Miền Nam và ngược lại;",
+    "PriceList.MainPage.option2.subTitle2.sub3": ": là địa danh các bưu gửi có địa chỉ nhận thuộc Miền Bắc, địa chỉ giao thuộc Miền Nam và ngược lại.",
+    "PriceList.MainPage.option2.subTitle2.sub4": "• Địa danh tỉnh theo miền chi tiết như sau: ",
+    "PriceList.MainPage.option2.subTitle2.sub4.table.head1": "Miền Bắc (28 tỉnh)",
+    "PriceList.MainPage.option2.subTitle2.sub4.table.head2": "Miền Trung (11 tỉnh)",
+    "PriceList.MainPage.option2.subTitle2.sub4.table.head3": "Miền Nam (24 tỉnh)",
+
+    "PriceList.MainPage.option2.subTitle3": "3. Ghi chú",
+    "PriceList.MainPage.option2.subTitle3.warning1": "+ Bảng giá dịch vụ không áp dụng đối với bưu gửi có địa chỉ giao, nhận thuộc cùng trong 01 tỉnh.",
+    "PriceList.MainPage.option2.subTitle3.warning2": " + Giá cước và địa danh giao nhận bưu gửi của dịch vụ chuyển phát tiết kiệm (MãTTK) được nêu tại bảng giá này là các địa chỉ là các địa chỉ thuộc thành phố là trung tâm hành chính các tỉnh/ thành phố trực thuộc trung ương trên toàn quốc.",
+    "PriceList.MainPage.option2.subTitle3.warning3": "+ Thời gian toàn trình từ 4 đến 7 ngày, tính cả ngày nghỉ T7, CN, lễ, tết theo quy định .",
+    "PriceList.MainPage.option2.subTitle3.warning4": "+ Cách tính cước áp dụng cho tất cả các địa danh như sau:",
+    "PriceList.MainPage.option2.subTitle3.warning5": "➢ Đối với tuyến huyện, xã không thuộc vùng sâu, vùng xa . Giá cước áp dụng bảng giá cước nêu tại Mục 1của bảng giá này và được cộng thêm 20% so với giá cước đã nêu tại Mục 1 và áp dụng cho bưu gửi có trọng lượng ≤ 300kg . ",
+    "PriceList.MainPage.option2.subTitle3.warning6": "➢ Đối với tuyến huyện, xã thuộc vùng sâu, vùng xa khách hàng sử dụng dịch vụ chuyển phát và có sự thỏa thuận, đồng ý trước giữa công ty và người sử dụng dịch vụ về giá cước và thời gian toàn trình nhưng vẫn đảm bảo các quy định của pháp luật hiện hành. ",
+    "PriceList.MainPage.option2.subTitle3.warning7": "➢ Đối với bưu gửi có trọng lượng trên 300kg thì phần trọng lượng từ 300 kg trở lên cước phí được tính là 1.100 vnđ/kg. Từ nấc 02 kg trở lên, phần lẻ được làm tròn thành 01kg để tính cước. " ,
+    "PriceList.MainPage.option2.subTitle3.warning8": "➢ Đối với hàng nguyên khối từ 200 kg trở lên thu thêm cước nâng hạ tùy từng thời điểm và có sự thông báo và thỏa thuận của hai bên.",
+    "PriceList.MainPage.option2.subTitle3.warning9": " + Trọng lượng được quy đổi theo công thức: Số đo (cm): (Dài x Rộng x Cao) ÷ 6000 = Trọng lượng( kg). ",
+    "PriceList.MainPage.option2.subTitle3.warning10": "+ Giá trên chưa bao gồm phụ phí nhiên liệu và 10% thuế VAT. ",
+    
+    
+    
+    
+    "PriceList.MainPage.option3": "BẢNG GIÁ DỊCH VỤ CHUYỂN PHÁT HỎA TỐC"
+
 }
  
