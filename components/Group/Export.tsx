@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FormattedMessage } from "react-intl";
 const ExportGroup = () => {
   return (
     <div className="flex-col  pt-16 ">
@@ -13,20 +13,20 @@ const ExportGroup = () => {
         >
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/50 z-[2] rounded-lg">
             <h1 className="absolute text-5xl bottom-4 left-4  md:bottom-10 md:left-20 text-white font-bold">
-              VỀ CHÚNG TÔI
+              <FormattedMessage id="AboutUs.MainPage.title" />
             </h1>
           </div>
         </div>
       </div>
       <div className="bg-white ">
         <div className="grid md:grid-cols-2 gap-10  md:mx-20 mx-10  ">
-          <div className="font-bold text-2xl textcomponent mt-20 ">
+          <div className="font-bold text-2xl textcomponent mt-20 text-justify ">
             Ahamove là thương hiệu giao hàng theo nhu cầu chuyên nghiệp với nền
             tảng công nghệ hiện đại nhất khu vực được tối ưu hoá cho nhu cầu của
             địa phương, đáp ứng mọi nhu cầu vận chuyển của người tiêu dùng và
             chủ doanh nghiệp.
           </div>
-          <div className="textcomponent mt-20">
+          <div className="textcomponent mt-20 text-justify ">
             Thành lập từ năm 2015, Ahamove là dịch vụ giúp hơn 300.000 chủ shop,
             chủ doanh nghiệp ship hàng nội thành tại Hà Nội, TP. HCM và 7 thành
             phố khác với tốc độ nhanh, chi phí hợp lý và đội ngũ shipper hùng
@@ -41,11 +41,11 @@ const ExportGroup = () => {
             thưởng hấp dẫn.
           </div>
         </div>
-        <div className="grid md:grid-cols-2 gap-10 mt-20 md:mx-20 mx-10">
-          <div className="textcomponent " data-aos="zoom-in-down">
+        <div className=" gap-10 mt-20 md:mx-20 mx-10">
+          <div className="mt-7 textcomponent grid place-items-center ">
             <svg
               viewBox="0 0 1024 1024"
-              className="icon"
+              className="icon "
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               fill="#000000"
@@ -89,18 +89,18 @@ const ExportGroup = () => {
                 ></path>
               </g>
             </svg>
-            <div className="mt-5 font-bold text-3xl textcomponent">Sứ mệnh</div>
-            <div className="mt-5 textcomponent">
+            <div className="mt-9 font-bold text-3xl textcomponent">Sứ mệnh</div>
+            <div className="mt-8 textcomponent text-justify ">
               Ahamove là thương hiệu giao hàng theo nhu cầu chuyên nghiệp với
               nền tảng công nghệ hiện đại nhất khu vực được tối ưu hoá cho nhu
               cầu của địa phương, đáp ứng mọi nhu cầu vận chuyển của người tiêu
               dùng và chủ doanh nghiệp.
             </div>
           </div>
-          <div data-aos="zoom-in-down">
+          <div className="textcomponent mt-10 grid place-items-center">
             <svg
               viewBox="0 0 1024 1024"
-              className="icon"
+              className="icon "
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               fill="#000000"
@@ -132,10 +132,8 @@ const ExportGroup = () => {
                 ></path>
               </g>
             </svg>
-            <div className="mt-5 font-bold text-3xl textcomponent ">
-              Tầm nhìn
-            </div>
-            <div className="mt-5 textcomponent ">
+            <div className=" font-bold text-3xl textcomponent ">Tầm nhìn</div>
+            <div className=" textcomponent text-justify ">
               Vươn lên hàng đầu trong lĩnh vực ứng dụng công nghệ giao hàng Việt
               Nam và vươn ra khu vực
             </div>
@@ -145,7 +143,7 @@ const ExportGroup = () => {
           Giá trị cốt lõi
         </div>
         <div className="grid md:grid-cols-3 gap-10 mt-20 md:mx-20 mx-10 ">
-          <div>
+          <div className="grid  place-items-center">
             <div>
               <svg
                 viewBox="0 0 1024 1024"
@@ -183,13 +181,13 @@ const ExportGroup = () => {
               </svg>
             </div>
             <div className="textTitleMedium mt-5">Tốc độ</div>
-            <div className="mt-2">
+            <div className="mt-2 text-justify ">
               Luôn dẫn đầu, bắt kịp những công nghệ mới nhất. Luôn nắm bắt sớm
               nhất nhu cầu khách hàng. Đảm bảo nhanh chóng trong tốc độ cung cấp
               dịch vụ và sản phẩm.
             </div>
           </div>
-          <div>
+          <div className="grid  place-items-center">
             <div>
               <svg
                 viewBox="0 0 1024 1024"
@@ -223,13 +221,13 @@ const ExportGroup = () => {
               </svg>
             </div>
             <div className="textTitleMedium mt-5">Đồng hành</div>
-            <div className="mt-5">
+            <div className="mt-5 text-justify ">
               Để tiến xa, chúng ta đi cùng nhau. Đồng hành để thấu hiểu và đón
               đầu những nhu cầu mới, để luôn có mặt khi cần và hỗ trợ trên từng
               chuyến hàng.
             </div>
           </div>
-          <div>
+          <div className="grid  place-items-center">
             <div>
               <svg
                 viewBox="0 0 1024 1024"
@@ -271,7 +269,7 @@ const ExportGroup = () => {
               </svg>
             </div>
             <div className="textTitleMedium mt-5">Đổi mới</div>
-            <div className="mt-5">
+            <div className="mt-5 text-justify ">
               Tại Ahamove, đổi mới luôn diễn ra từng giờ, từng ngày, trong mọi
               hoạt động. Chúng ta không hài lòng với thành quả đang có và luôn
               tìm kiếm những giải pháp tốt hơn.
