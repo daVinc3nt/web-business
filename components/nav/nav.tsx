@@ -25,7 +25,7 @@ const Navbar = () => {
         },
         {
           title: intl.formatMessage({ id: 'NavBar.serv.subroute2' }),
-          url: "/userhelp",
+          url: "/pricelist",
         },
       ],
     },
