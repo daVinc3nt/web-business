@@ -28,7 +28,7 @@ const PriceList = () => {
               <div className="font-bold ">
                 <FormattedMessage id="PriceList.MainPage.option1.subTitle1.sub1"></FormattedMessage>
               </div>
-              <div className="relative overflow-x-auto mt-3">
+              <div className="relative overflow-x-scroll mt-3">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead className="border border-black">
                     <tr>
@@ -97,7 +97,7 @@ const PriceList = () => {
               <div className="font-bold mt-5">
                 <FormattedMessage id="PriceList.MainPage.option1.subTitle1.sub2" />
               </div>
-              <div className="relative overflow-x-auto mt-3">
+              <div className="relative overflow-x-scroll mt-3">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
@@ -210,7 +210,7 @@ const PriceList = () => {
                 </table>
               </div>
             </div>
-            <div className="grid gap-5 mt-5">
+            <div className="grid gap-5 mt-5 text-justify">
               <div className="font-bold">
                 <FormattedMessage id="PriceList.MainPage.option1.subTitle1.warning1" />
               </div>
@@ -235,7 +235,7 @@ const PriceList = () => {
             <FormattedMessage id="PriceList.MainPage.option1.subTitle2" />
           </div>
           <div>
-            <div className="relative overflow-x-auto mt-5">
+            <div className="relative overflow-x-scroll mt-5">
               <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <tbody>
                   <tr>
@@ -245,7 +245,7 @@ const PriceList = () => {
                     <th className="text-s font-normal text-black border border-black px-6 py-3">
                       <FormattedMessage id="PriceList.MainPage.option1.subTitle2.table.head2" />
                     </th>
-                    <th className="text-s font-normal text-black border border-black px-6 py-3">
+                    <th className="text-s font-normal text-black border border-black px-6 py-3 text-justify">
                       <FormattedMessage id="PriceList.MainPage.option1.subTitle2.table.North" />
                       Hà Nội, Quảng Ninh, Thái Bình, Ninh Bình, Nam Định, Hải
                       Dương, Hải Phòng, Hưng Yên, Bắc Ninh, Hà Nam, Vĩnh Phúc,
@@ -263,7 +263,7 @@ const PriceList = () => {
                 </tbody>
               </table>
             </div>
-            <div className="grid gap-5 mt-5">
+            <div className="grid gap-5 mt-5 text-justify">
               <div className="font-bold">
                 <FormattedMessage id="PriceList.MainPage.option1.subTitle2.warning1" />
               </div>
@@ -309,9 +309,9 @@ const PriceList = () => {
             1. Bảng giá chuyển phát tiết kiệm :
           </div>
 
-          <div className="relative overflow-x-auto mt-5">
+          <div className="relative overflow-x-scroll mt-5">
             <div className="font-bold"> Tất cả các tỉnh, thành phố</div>
-            <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-5">
+            <table className="w-full overflow-x-scroll  text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-5">
               <thead>
                 <tr>
                   <th className="text-black border border-black px-6 py-3">
@@ -438,7 +438,7 @@ const PriceList = () => {
               </tbody>
             </table>
           </div>
-          <div className="relative overflow-x-auto mt-5">
+          <div className="relative overflow-x-scroll mt-5">
             <div className="font-bold">
               <FormattedMessage id="PriceList.MainPage.option2.subTitle1.sub2" />
             </div>
@@ -554,7 +554,7 @@ const PriceList = () => {
           </div>
           <div className="textTitleSmall mt-5">2. Địa danh giao nhận </div>
 
-          <div className="grid gap-5 mt-5">
+          <div className="grid gap-5 mt-5 text-justify">
             <div>
               •{" "}
               <FormattedMessage id="PriceList.MainPage.option2.subTitle1.table.head2" />
@@ -573,8 +573,8 @@ const PriceList = () => {
             <div>
               <FormattedMessage id="PriceList.MainPage.option2.subTitle2.sub4" />
             </div>
-            <div className="relative overflow-x-auto">
-              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <div className="relative overflow-x-scroll">
+              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 text-justify">
                 <tbody>
                   <tr>
                     <th className="text-s text-black border border-black px-6 py-3">
@@ -617,7 +617,7 @@ const PriceList = () => {
           <div className="textTitleSmall ">
             <FormattedMessage id="PriceList.MainPage.option2.subTitle3" />
           </div>
-          <div className="grid gap-5 mt-5">
+          <div className="grid gap-5 mt-5 text-justify">
             <div>
               <FormattedMessage id="PriceList.MainPage.option1.subTitle1.warning1" />
             </div>
@@ -673,7 +673,7 @@ const PriceList = () => {
             <div className="font-bold text-xl">Khu vực: </div>
             <div className="grid gap-5">
               <div className="font-bold ml-2">-TP Hà Nội :</div>
-              <div className="relative overflow-x-auto">
+              <div className="relative overflow-x-scroll">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
@@ -751,7 +751,7 @@ const PriceList = () => {
                 </table>
               </div>
               <div className="font-bold ml-2">TP. Hồ Chí Minh</div>
-              <div className="relative overflow-x-auto">
+              <div className="relative overflow-x-scroll">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
@@ -829,7 +829,7 @@ const PriceList = () => {
                 </table>
               </div>
               <div className="font-bold ml-2">TP Đà Nẵng</div>
-              <div className="relative overflow-x-auto">
+              <div className="relative overflow-x-scroll">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
@@ -907,7 +907,7 @@ const PriceList = () => {
                 </table>
               </div>
               <div className="font-bold ml-2">Tỉnh cách TP Hà Nội ≤100 Km </div>
-              <div className="relative overflow-x-auto">
+              <div className="relative overflow-x-scroll">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
@@ -987,7 +987,7 @@ const PriceList = () => {
               <div className="font-bold ml-2">
                 Tỉnh cách TP Hồ Chí Minh ≤ 100Km
               </div>
-              <div className="relative overflow-x-auto">
+              <div className="relative overflow-x-scroll">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
@@ -1068,7 +1068,7 @@ const PriceList = () => {
           </div>
           <div className="textTitleSmall mt-5">2. Địa danh giao nhận </div>
           <div>
-            <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-5">
+            <table className="w-full text-sm text-justify md:text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-5">
               <tbody>
                 <tr>
                   <th className="text-s text-black border border-black px-6 py-3">
@@ -1128,8 +1128,8 @@ const PriceList = () => {
           <div className="grid gap-5 mt-5">
             <div className=" grid gap-5">
               <div className="font-bold">Hà Nội:</div>
-              <div className="relative overflow-x-auto">
-                <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+              <div className="relative overflow-x-scroll text-justify">
+                <table className="w-full text-sm text-justify rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
                       <th className="text-s text-black border border-black px-6 py-3">
@@ -1160,8 +1160,8 @@ const PriceList = () => {
             </div>
             <div>
               <div className="font-bold">TP. Hồ Chí Minh:</div>
-              <div className="relative overflow-x-auto">
-                <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+              <div className="relative overflow-x-scroll">
+                <table className="w-full text-sm text-justify rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
                       <th className="text-s text-black border border-black px-6 py-3">
@@ -1189,8 +1189,8 @@ const PriceList = () => {
             </div>
             <div>
               <div className="font-bold">Các tỉnh còn lại nêu tại mục 2</div>
-              <div className="relative overflow-x-auto">
-                <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+              <div className="relative overflow-x-scroll ">
+                <table className="w-full text-sm  rtl:text-right text-gray-500 dark:text-gray-400 text-justify">
                   <thead>
                     <tr>
                       <th className="text-s text-black border border-black px-6 py-3">
@@ -1264,8 +1264,9 @@ const PriceList = () => {
           </div>
           <div className="textTitleSmall mt-5">5. Ghi chú</div>
           <div>
-            <div className="mt-5">
+            <div className="mt-5 text-justify">
               <FormattedMessage id="PriceList.MainPage.option1.subTitle1.warning1" />
+              <br />
               • Chỉ tiêu thời gian toàn trình: <br />
               ✓ Đối với tuyến huyện, xã không thuộc vùng sâu, vùng xa (Ngoại
               thành). Giá cước áp dụng bảng giá cước nêu tại Mục 1của bảng giá
