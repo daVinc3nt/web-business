@@ -1,14 +1,15 @@
-import { useMotionValue, useTransform, animate, motion } from "framer-motion";
+import { useMotionValue, useTransform, animate, motion, useAnimation, useInView } from "framer-motion";
 import ButtonLink from "./Sec1ChildComponent/ButtonLink";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import CursorBlinker from "./Sec1ChildComponent/CursorBlinker";
+import { FormattedMessage, useIntl } from "react-intl";
 
 const NewsBlogSec1 = () => {
   const textIndex = useMotionValue(0);
+  const intl = useIntl();
   const texts = [
-    "Có gì trên TDLogistics?",
+    intl.formatMessage({ id: 'NewsBlog.MainPage.title' }),
   ];
-
   const baseText = useTransform(textIndex, (latest) => texts[latest] || "");
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
@@ -16,6 +17,10 @@ const NewsBlogSec1 = () => {
     baseText.get().slice(0, latest)
   );
   const updatedThisRound = useMotionValue(true);
+  const refSec1 = useRef(null);
+  const isInView = useInView(refSec1, {once: true});
+  const mainControls = useAnimation();
+  const slideControls = useAnimation();
 
   useEffect(() => {
     animate(count, 180, {
@@ -40,31 +45,47 @@ const NewsBlogSec1 = () => {
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(()=>{
+    if (isInView){
+      mainControls.start("visible")
+      slideControls.start("visible")
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isInView])
+
   return (
     <>
       <div className="sm:px-[4.5rem] px-2 lg:px-[5.5rem] bg-black/70 pt-20 pb-2">
         <motion.section  
+          ref={refSec1}
           variants={{
-            hidden: {opacity:0 , y:75},
+            hidden: {opacity:0 , y:20},
             visible: {opacity:1 , y:0},
           }}
           initial="hidden"
-          animate="visible"
-          transition={{ duration: .5, delay: .25}}
+          animate={mainControls}
+          transition={{ duration: .7, delay: .25}}
           className="relative p-4 rounded-3xl h-full w-full">
-          <div className="flex flex-col mx-auto h-full w-full">
-              <span className="self-center lg:pb-4">
-                <motion.span className="font-bold text-4xl lg:text-6xl lg:pt-8 text-center text-white">{ displayText }</motion.span>
-                <CursorBlinker />
-              </span>
-              <h2 className="font-semibold text-sm sm:text-xl lg:text-2xl pt-4 pb-2 lg:pb-4 text-center text-white">Nơi cập nhật tất cả tin tức, hoạt động mới nhất từ TDLogistics và các đối tác.</h2>
+          <div className="flex flex-col h-full w-full items-center">
+            <span className="self-center pb-4 text-center">
+              <motion.span className="font-bold text-4xl lg:text-6xl lg:pt-8 text-white">
+                {displayText}
+              </motion.span>
+              <CursorBlinker />
+            </span>
+            <div className="relative pb-4">
+              <div className="relative font-thin text-sm sm:text-xl lg:text-2xl text-center text-white">
+                <FormattedMessage id="NewsBlog.MainPage.subTitle"/>
+              </div>
+            </div>
           </div>
           <div className="flex flex-wrap w-full justify-center">
-            <ButtonLink href="#allnews" buttonText="Tất cả tin tức"/>
-            <ButtonLink href="#customer" buttonText="Khách hàng"/>
-            <ButtonLink href="#driver" buttonText="Tài xế"/>
-            <ButtonLink href="#partner" buttonText="Đối tác"/>
-            <ButtonLink href="#brand" buttonText="Đồng hành cùng thương hiệu"/> 
+            <ButtonLink href="#allnews" buttonText={intl.formatMessage({ id: 'NewsBlog.MainPage.button1' })}/>
+            <ButtonLink href="#customer" buttonText={intl.formatMessage({ id: 'NewsBlog.MainPage.button2' })}/>
+            <ButtonLink href="#driver" buttonText={intl.formatMessage({ id: 'NewsBlog.MainPage.button3' })}/>
+            <ButtonLink href="#partner" buttonText={intl.formatMessage({ id: 'NewsBlog.MainPage.button4' })}/>
+            <ButtonLink href="#brand" buttonText={intl.formatMessage({ id: 'NewsBlog.MainPage.button5' })}/> 
           </div>
         </motion.section>
       </div>

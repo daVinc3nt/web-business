@@ -45,7 +45,7 @@ const Slider = ({ slides }: Props) => {
                   alt="/"
                   width="1440"
                   height="600"
-                  objectFit="cover"
+                  style={{objectFit:"cover"}}
                 />
               )}
               <FaArrowCircleRight

@@ -51,7 +51,7 @@ const LangSelector: React.FC<Props>  = ({IconColor}) => {
           id="langRefButton" ref={langRef} onClick={() => setOpen((pv) => !pv)}
           className="flex items-center z-50 gap-4 px-3 rounded-lg text-indigo-50"
         >
-          <div id="langRefButton" className="absolute bg-transparent w-full h-full"></div>
+          <div id="langRefButton" className="absolute z-40 bg-transparent w-full h-full"></div>
           <FiGlobe color={IconColor}  size={30} strokeWidth="1.5"/>
           <motion.span variants={iconVariants}>
             <FiChevronDown color={IconColor}/>
@@ -63,7 +63,7 @@ const LangSelector: React.FC<Props>  = ({IconColor}) => {
           variants={wrapperVariants}
           style={{ originY: "top", translateX: "-50%" }}  
           transition={{ duration: 0.1 }}
-          className="flex flex-col gap-2 p-1 z-50 rounded-lg bg-white shadow-xl absolute top-[120%] left-[50%] w-full overflow-hidden"
+          className="flex flex-col gap-2 p-1 z-50 rounded-lg bg-white shadow-xl absolute top-[130%] left-[50%] w-full overflow-hidden"
         >
           <Option handle={handleOnClick} Icon={FiEdit} text="English" />
           <Option handle={handleOnClick} Icon={FiPlusSquare} text="Tiếng Việt" />

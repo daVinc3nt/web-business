@@ -37,7 +37,11 @@ export default function NavMenu({ items, depthLevel, textColor }) {
         >
           {items.submenu?.map((menu, index)=>{
           return (
-          <MenuItem key={index} onClick={handleClose}>{menu.title}</MenuItem>)
+          <Link role="menuitem" href={menu.url} key={index}>
+            <MenuItem> 
+                {menu.title}
+            </MenuItem>
+          </Link>)
           })}
         </Menu>
       </div>
