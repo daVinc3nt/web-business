@@ -114,7 +114,7 @@ const PriceList = () => {
                         {">"} 300km
                       </th>
                       <th className="border text-black border-black px-6 py-3">
-                        TP HCM↔ Đà Nẵng ↔ Hà Nội{" "}
+                        Hồ Chí Minh↔ Đà Nẵng ↔ Hà Nội{" "}
                       </th>
                       <th className="border text-black border-black px-6 py-3">
                         Hà Nội ↔Hồ Chí Minh{" "}
@@ -303,14 +303,16 @@ const PriceList = () => {
       <div className=" bg-white rounded-xl mt-10 ">
         <div className="p-10">
           <div className="textTitleMedium">
-            BẢNG GIÁ DỊCH VỤ CHUYỂN PHÁT TIẾT KIỆM ( Mã :TTK)
+            <FormattedMessage id="PriceList.MainPage.option2" />
           </div>
           <div className="textTitleSmall mt-5">
-            1. Bảng giá chuyển phát tiết kiệm :
+            <FormattedMessage id="PriceList.MainPage.option2.subTitle1" />
           </div>
 
           <div className="relative overflow-x-scroll mt-5">
-            <div className="font-bold"> Tất cả các tỉnh, thành phố</div>
+            <div className="font-bold">
+              <FormattedMessage id="PriceList.MainPage.option2.subTitle1.sub1" />
+            </div>
             <table className="w-full overflow-x-scroll  text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-5">
               <thead>
                 <tr>
@@ -552,7 +554,9 @@ const PriceList = () => {
               </tbody>
             </table>
           </div>
-          <div className="textTitleSmall mt-5">2. Địa danh giao nhận </div>
+          <div className="textTitleSmall mt-5">
+            <FormattedMessage id="PriceList.MainPage.option2.subTitle2" />{" "}
+          </div>
 
           <div className="grid gap-5 mt-5 text-justify">
             <div>
@@ -574,7 +578,7 @@ const PriceList = () => {
               <FormattedMessage id="PriceList.MainPage.option2.subTitle2.sub4" />
             </div>
             <div className="relative overflow-x-scroll">
-              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 text-justify">
+              <table className="w-full text-sm rtl:text-right text-gray-500 dark:text-gray-400 text-justify">
                 <tbody>
                   <tr>
                     <th className="text-s text-black border border-black px-6 py-3">
@@ -605,9 +609,10 @@ const PriceList = () => {
                     <th className="text-s font-normal text-black border border-black px-6 py-3 ">
                       Bình Thuận, Ninh Thuận, Đắk Lắk, Lâm Đồng, Bình Dương,
                       Bình Phước, Bến Tre, Đắk Nông, Đồng Nai, Long An, Tiền
-                      Giang, Tây Ninh, Bà Rịa Vũng Tàu, TP. Hồ Chí Minh, Trà
-                      Vinh, Vĩnh Long, An Giang, Bạc Liêu, Cà Mau, Cần Thơ, Đồng
-                      Tháp, Hậu Giang, Kiên Giang, Sóc Trăng.
+                      Giang, Tây Ninh, Bà Rịa Vũng Tàu,
+                      <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option7" />
+                      , Trà Vinh, Vĩnh Long, An Giang, Bạc Liêu, Cà Mau, Cần
+                      Thơ, Đồng Tháp, Hậu Giang, Kiên Giang, Sóc Trăng.
                     </th>
                   </tr>
                 </tbody>
@@ -622,35 +627,27 @@ const PriceList = () => {
               <FormattedMessage id="PriceList.MainPage.option1.subTitle1.warning1" />
             </div>
             <div>
-              + Bảng giá dịch vụ không áp dụng đối với bưu gửi có địa chỉ giao,
-              nhận thuộc cùng trong 01 tỉnh. <br />
-              + Giá cước và địa danh giao nhận bưu gửi của dịch vụ chuyển phát
-              tiết kiệm (MãTTK) được nêu tại bảng giá này là các địa chỉ là các
-              địa chỉ thuộc thành phố là trung tâm hành chính các tỉnh/ thành
-              phố trực thuộc trung ương trên toàn quốc. <br />
-              + Thời gian toàn trình từ 4 đến 7 ngày, tính cả ngày nghỉ T7, CN,
-              lễ, tết theo quy định .
-              <br />+ Cách tính cước áp dụng cho tất cả các địa danh như sau:
+              <FormattedMessage id="PriceList.MainPage.option2.subTitle3.warning1" />{" "}
+              <br />
+              <FormattedMessage id="PriceList.MainPage.option2.subTitle3.warning2" />
+              <br />
+              <FormattedMessage id="PriceList.MainPage.option2.subTitle3.warning3" />
+              <br />{" "}
+              <FormattedMessage id="PriceList.MainPage.option2.subTitle3.warning4" />
             </div>
             <div className="ml-3">
-              ➢ Đối với tuyến huyện, xã không thuộc vùng sâu, vùng xa . Giá cước
-              áp dụng bảng giá cước nêu tại Mục 1của bảng giá này và được cộng
-              thêm 20% so với giá cước đã nêu tại Mục 1 và áp dụng cho bưu gửi
-              có trọng lượng ≤ 300kg . <br />➢ Đối với tuyến huyện, xã thuộc
-              vùng sâu, vùng xa khách hàng sử dụng dịch vụ chuyển phát và có sự
-              thỏa thuận, đồng ý trước giữa công ty và người sử dụng dịch vụ về
-              giá cước và thời gian toàn trình nhưng vẫn đảm bảo các quy định
-              của pháp luật hiện hành. <br />➢ Đối với bưu gửi có trọng lượng
-              trên 300kg thì phần trọng lượng từ 300 kg trở lên cước phí được
-              tính là 1.100 vnđ/kg. Từ nấc 02 kg trở lên, phần lẻ được làm tròn
-              thành 01kg để tính cước. <br /> ➢ Đối với hàng nguyên khối từ 200
-              kg trở lên thu thêm cước nâng hạ tùy từng thời điểm và có sự thông
-              báo và thỏa thuận của hai bên.
+              <FormattedMessage id="PriceList.MainPage.option2.subTitle3.warning5" />{" "}
+              <br />
+              <FormattedMessage id="PriceList.MainPage.option2.subTitle3.warning6" />
+              <br />{" "}
+              <FormattedMessage id="PriceList.MainPage.option2.subTitle3.warning7" />
+              <br />
+              <FormattedMessage id="PriceList.MainPage.option2.subTitle3.warning8" />
             </div>
             <div>
-              + Trọng lượng được quy đổi theo công thức: Số đo (cm): (Dài x Rộng
-              x Cao) ÷ 6000 = Trọng lượng( kg). <br />+ Giá trên chưa bao gồm
-              phụ phí nhiên liệu và 10% thuế VAT
+              <FormattedMessage id="PriceList.MainPage.option2.subTitle3.warning9" />{" "}
+              <br />
+              <FormattedMessage id="PriceList.MainPage.option2.subTitle3.warning10" />
             </div>
           </div>
         </div>
@@ -658,52 +655,55 @@ const PriceList = () => {
       <div className=" bg-white rounded-xl mt-10">
         <div className="p-10">
           <div className="textTitleMedium ">
-            BẢNG GIÁ DỊCH VỤ CHUYỂN PHÁT HỎA TỐC
+            <FormattedMessage id="PriceList.MainPage.option3" />
           </div>
           <div className="textTitleSmall mt-5">
-            1. Bảng giá chuyển phát hỏa tốc:
+            <FormattedMessage id="PriceList.MainPage.option3.subTitle1" />
           </div>
           <div className="grid gap-5 mt-5">
             <div>
-              Áp dụng cho tất cả các địa chỉ phát tại các thành phố là trung tâm
-              hành chính thuộc các tỉnh/ thành phố trực thuộc trung ương trên
-              toàn quốc và Đảo Phú Quốc thuộc tỉnh Kiên Giang, Đảo Côn Đảo thuộc
-              tỉnh Bà Rịa-Vũng Tàu.
+              <FormattedMessage id="PriceList.MainPage.option3.subTitle1.sub1" />
             </div>
-            <div className="font-bold text-xl">Khu vực: </div>
+            <div className="font-bold text-xl">
+              <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option1" />
+            </div>
             <div className="grid gap-5">
-              <div className="font-bold ml-2">-TP Hà Nội :</div>
+              <div className="font-bold ml-2">
+                -
+                <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option6" />{" "}
+                :
+              </div>
               <div className="relative overflow-x-scroll">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Trọng lượng
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option2" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Hà Nội
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option6" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Hồ Chí Minh
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option7" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Đà Nẵng
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option8" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh cách TP Hà Nội ≤100 Km
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option3" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh cách TP Hồ Chí Minh ≤ 100Km
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option4" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh bay thẳng{" "}
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option5" />
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td className="text-s font-bold text-black border border-black px-6 py-3">
-                        02 kg đầu
+                        {"<="}2 kg
                       </td>
                       <td className="text-s text-black border border-black px-6 py-3">
                         30.000 đ
@@ -726,7 +726,7 @@ const PriceList = () => {
                     </tr>
                     <tr>
                       <td className="text-s font-bold text-black border border-black px-6 py-3">
-                        0,5 kg tiếp theo
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.row1" />
                       </td>
                       <td className="text-s text-black border border-black px-6 py-3">
                         3.000 đ
@@ -750,38 +750,40 @@ const PriceList = () => {
                   </tbody>
                 </table>
               </div>
-              <div className="font-bold ml-2">TP. Hồ Chí Minh</div>
+              <div className="font-bold ml-2">
+                <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option7" />
+              </div>
               <div className="relative overflow-x-scroll">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Trọng lượng
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option2" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Hà Nội
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option6" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Hồ Chí Minh
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option7" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Đà Nẵng
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option8" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh cách TP Hà Nội ≤100 Km
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option3" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh cách TP Hồ Chí Minh ≤ 100Km
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option4" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh bay thẳng{" "}
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option5" />
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td className="text-s font-bold text-black border border-black px-6 py-3">
-                        02 kg đầu
+                        {"<="} 2kg
                       </td>
                       <td className="text-s text-black border border-black px-6 py-3">
                         150.000 đ
@@ -804,7 +806,7 @@ const PriceList = () => {
                     </tr>
                     <tr>
                       <td className="text-s font-bold text-black border border-black px-6 py-3">
-                        0,5 kg tiếp theo
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.row1" />
                       </td>
                       <td className="text-s text-black border border-black px-6 py-3">
                         12.000 đ
@@ -828,38 +830,40 @@ const PriceList = () => {
                   </tbody>
                 </table>
               </div>
-              <div className="font-bold ml-2">TP Đà Nẵng</div>
+              <div className="font-bold ml-2">
+                <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option8" />
+              </div>
               <div className="relative overflow-x-scroll">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Trọng lượng
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option2" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Hà Nội
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option6" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Hồ Chí Minh
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option7" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Đà Nẵng
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option8" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh cách TP Hà Nội ≤100 Km
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option3" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh cách TP Hồ Chí Minh ≤ 100Km
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option4" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh bay thẳng{" "}
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option5" />
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td className="text-s font-bold text-black border border-black px-6 py-3">
-                        02 kg đầu
+                        {"<="} 2kg
                       </td>
                       <td className="text-s text-black border border-black px-6 py-3">
                         120.000 đ
@@ -882,7 +886,7 @@ const PriceList = () => {
                     </tr>
                     <tr>
                       <td className="text-s font-bold text-black border border-black px-6 py-3">
-                        0,5 kg tiếp theo
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.row1" />
                       </td>
                       <td className="text-s text-black border border-black px-6 py-3">
                         10.000 đ
@@ -906,38 +910,40 @@ const PriceList = () => {
                   </tbody>
                 </table>
               </div>
-              <div className="font-bold ml-2">Tỉnh cách TP Hà Nội ≤100 Km </div>
+              <div className="font-bold ml-2">
+                <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option3" />{" "}
+              </div>
               <div className="relative overflow-x-scroll">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Trọng lượng
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option2" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Hà Nội
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option6" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Hồ Chí Minh
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option7" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Đà Nẵng
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option8" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh cách TP Hà Nội ≤100 Km
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option3" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh cách TP Hồ Chí Minh ≤ 100Km
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option4" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh bay thẳng{" "}
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option5" />
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td className="text-s font-bold text-black border border-black px-6 py-3">
-                        02 kg đầu
+                        {"<="} 2 kg
                       </td>
                       <td className="text-s text-black border border-black px-6 py-3">
                         70.000 đ
@@ -960,7 +966,7 @@ const PriceList = () => {
                     </tr>
                     <tr>
                       <td className="text-s font-bold text-black border border-black px-6 py-3">
-                        0,5 kg tiếp theo
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.row1" />
                       </td>
                       <td className="text-s text-black border border-black px-6 py-3">
                         7.000 đ
@@ -985,39 +991,39 @@ const PriceList = () => {
                 </table>
               </div>
               <div className="font-bold ml-2">
-                Tỉnh cách TP Hồ Chí Minh ≤ 100Km
+                <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option4" />
               </div>
               <div className="relative overflow-x-scroll">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Trọng lượng
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option2" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Hà Nội
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option6" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Hồ Chí Minh
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option7" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        TP. Đà Nẵng
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option8" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh cách TP Hà Nội ≤100 Km
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option3" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh cách TP Hồ Chí Minh ≤ 100Km
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option4" />
                       </th>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Tỉnh bay thẳng{" "}
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option5" />
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td className="text-s font-bold text-black border border-black px-6 py-3">
-                        02 kg đầu
+                        {"<="} 2kg
                       </td>
                       <td className="text-s text-black border border-black px-6 py-3">
                         165.000 đ
@@ -1040,7 +1046,7 @@ const PriceList = () => {
                     </tr>
                     <tr>
                       <td className="text-s font-bold text-black border border-black px-6 py-3">
-                        0,5 kg tiếp theo
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle1.row1" />
                       </td>
                       <td className="text-s text-black border border-black px-6 py-3">
                         13.200 đ
@@ -1066,13 +1072,15 @@ const PriceList = () => {
               </div>
             </div>
           </div>
-          <div className="textTitleSmall mt-5">2. Địa danh giao nhận </div>
+          <div className="textTitleSmall mt-5">
+            <FormattedMessage id="PriceList.MainPage.option2.subTitle2" />{" "}
+          </div>
           <div>
             <table className="w-full text-sm text-justify md:text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-5">
               <tbody>
                 <tr>
                   <th className="text-s text-black border border-black px-6 py-3">
-                    Đối với tỉnh/Tp cách Hà Nội ≤ 100 Km
+                    <FormattedMessage id="PriceList.MainPage.option3.subTitle1.table.head1" />
                   </th>
                   <th className="text-s font-normal text-black border border-black px-6 py-3 ">
                     Vĩnh Phúc, Thái Nguyên, Bắc Ninh, Hưng Yên, Hải Dương, Hải
@@ -1081,7 +1089,7 @@ const PriceList = () => {
                 </tr>
                 <tr>
                   <th className="text-s text-black border border-black px-6 py-3">
-                    Đối với Tỉnh/Tp cách TP.Hồ Chí Minh ≤ 100Km
+                    <FormattedMessage id="PriceList.MainPage.option3.subTitle1.table.head2" />
                   </th>
                   <th className="text-s font-normal text-black border border-black  px-6 py-3">
                     Đồng Nai, Bình Dương, Bà Rịa- Vũng Tàu, Tây Ninh, Long An,
@@ -1090,8 +1098,7 @@ const PriceList = () => {
                 </tr>
                 <tr>
                   <th className="text-s text-black border border-black px-6 py-3">
-                    Đối với tỉnh bay thẳng (nhận bưu gửi tại Hà Nội & tỉnh cách
-                    Hà Nội ≤ 100 Km)
+                    <FormattedMessage id="PriceList.MainPage.option3.subTitle1.table.head3" />
                   </th>
                   <th className="text-s font-normal text-black border border-black px-6 py-3">
                     Nghệ An, Quảng Bình, Thừa Thiên- Huế, Bình Định, Khánh Hòa,
@@ -1101,8 +1108,7 @@ const PriceList = () => {
                 </tr>
                 <tr>
                   <th className="text-s text-black border border-black px-6 py-3">
-                    Tỉnh bay thẳng (nhận bưu gửi tại TP Hồ Chí Minh& tỉnh cách
-                    TP Hồ Chí Minh ≤ 100 Km)
+                    <FormattedMessage id="PriceList.MainPage.option3.subTitle1.table.head4" />
                   </th>
                   <th className="text-s font-normal text-black border border-black px-6 py-3">
                     Nghệ An, Quảng Bình, Thừa Thiên- Huế, Bình Định, Khánh Hòa,
@@ -1112,8 +1118,7 @@ const PriceList = () => {
                 </tr>
                 <tr>
                   <th className="text-s text-black border border-black px-6 py-3">
-                    Tỉnh bay thẳng (nhận bưu gửi tại Đà Nẵng & tỉnh cách Đà Nẵng
-                    ≤ 100 Km)
+                    <FormattedMessage id="PriceList.MainPage.option3.subTitle1.table.head5" />
                   </th>
                   <th className="text-s font-normal text-black border border-black px-6 py-3">
                     Lâm Đồng, Nghệ An, Cần Thơ, Hải Phòng, Khánh Hòa
@@ -1123,20 +1128,23 @@ const PriceList = () => {
             </table>
           </div>
           <div className="textTitleSmall mt-5">
-            3. Quy định chi tiết địa danh nội thành – ngoại thành như sau:{" "}
+            <FormattedMessage id="PriceList.MainPage.option3.subTitle3" />
           </div>
           <div className="grid gap-5 mt-5">
             <div className=" grid gap-5">
-              <div className="font-bold">Hà Nội:</div>
+              <div className="font-bold">
+                <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option6" />
+                :
+              </div>
               <div className="relative overflow-x-scroll text-justify">
                 <table className="w-full text-sm text-justify rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Nội thành
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle3.table.row1" />
                       </th>
                       <th className="text-s  text-black border border-black px-6 py-3">
-                        Ngoại thành
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle3.table.row2" />
                       </th>
                     </tr>
                   </thead>
@@ -1159,28 +1167,29 @@ const PriceList = () => {
               </div>
             </div>
             <div>
-              <div className="font-bold">TP. Hồ Chí Minh:</div>
+              <div className="font-bold">
+                <FormattedMessage id="PriceList.MainPage.option3.subTitle1.option6" />
+                :
+              </div>
               <div className="relative overflow-x-scroll">
                 <table className="w-full text-sm text-justify rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead>
                     <tr>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Nội thành
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle3.table.row1" />
                       </th>
                       <th className="text-s  text-black border border-black px-6 py-3">
-                        Ngoại thành
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle3.table.row2" />
                       </th>
                     </tr>
                   </thead>
                   <tbody className="border border-black">
                     <tr>
                       <td className="border text-sm border-black  px-6 py-3">
-                        Quận 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, Bình Thạnh, Tân
-                        Bình, Phú Nhuận, Gò Vấp
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle3.table.row5" />
                       </td>
                       <td className="border text-sm border-black  px-6 py-3">
-                        Quận 9, Hoóc Môn, Quận 12, Nhà Bè, Bình Tân, Bình Chánh,
-                        Thủ Đức, huyện Củ Chi, Cần Giờ
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle3.table.row6" />
                       </td>
                     </tr>
                   </tbody>
@@ -1188,26 +1197,28 @@ const PriceList = () => {
               </div>
             </div>
             <div>
-              <div className="font-bold">Các tỉnh còn lại nêu tại mục 2</div>
+              <div className="font-bold">
+                <FormattedMessage id="PriceList.MainPage.option3.subTitle3.table.head1" />
+              </div>
               <div className="relative overflow-x-scroll ">
                 <table className="w-full text-sm  rtl:text-right text-gray-500 dark:text-gray-400 text-justify">
                   <thead>
                     <tr>
                       <th className="text-s text-black border border-black px-6 py-3">
-                        Nội thành
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle3.table.row1" />
                       </th>
                       <th className="text-s  text-black border border-black px-6 py-3">
-                        Ngoại thành
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle3.table.row2" />
                       </th>
                     </tr>
                   </thead>
                   <tbody className="border border-black">
                     <tr>
                       <td className="border text-sm border-black  px-6 py-3">
-                        Thành phố/ thị xã thuộc TT hành chính Tỉnh/ Thành phố
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle3.table.row3" />
                       </td>
                       <td className="border text-sm border-black  px-6 py-3">
-                        Các Thành phố, Thị xã, Trung tâm Huyện còn lại.
+                        <FormattedMessage id="PriceList.MainPage.option3.subTitle3.table.row4" />
                       </td>
                     </tr>
                   </tbody>
@@ -1215,72 +1226,73 @@ const PriceList = () => {
               </div>
             </div>
           </div>
-          <div className="textTitleSmall mt-5">4. Thời gian toàn trình: </div>
+          <div className="textTitleSmall mt-5">
+            <FormattedMessage id="PriceList.MainPage.option3.subTitle4" />
+          </div>
           <div>
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-5">
               <tbody>
                 <tr>
                   <th className="text-s text-black border border-black px-6 py-3">
-                    Địa danh nhận và phát
+                    <FormattedMessage id="PriceList.MainPage.option3.subTitle4.sub1" />
                   </th>
                   <th className="text-s text-black border border-black px-6 py-3">
-                    Thời gian
+                    <FormattedMessage id="PriceList.MainPage.option3.subTitle4.sub2" />
                   </th>
                 </tr>
                 <tr>
                   <th className="text-s text-black border border-black px-6 py-3">
-                    Nội Thành ↔ Nôi thành cùng một tỉnh/Tp
+                    <FormattedMessage id="PriceList.MainPage.option3.subTitle4.head1" />
                   </th>
                   <th className="text-s font-normal text-black border border-black  px-6 py-3">
-                    6 Giờ
+                    6h
                   </th>
                 </tr>
                 <tr>
                   <th className="text-s text-black border border-black px-6 py-3">
-                    Nội thành ↔ Ngoại thành cùng một tỉnh/Tp
+                    <FormattedMessage id="PriceList.MainPage.option3.subTitle4.head2" />
                   </th>
                   <th className="text-s font-normal text-black border border-black px-6 py-3">
-                    12 Giờ
+                    12h
                   </th>
                 </tr>
                 <tr>
                   <th className="text-s text-black border border-black px-6 py-3">
-                    Nội thành tỉnh / Tp A ↔ Nội thành tỉnh / Tp B
+                    <FormattedMessage id="PriceList.MainPage.option3.subTitle4.head3" />
                   </th>
                   <th className="text-s font-normal text-black border border-black px-6 py-3">
-                    24 Giờ
+                    24h
                   </th>
                 </tr>
                 <tr>
                   <th className="text-s text-black border border-black px-6 py-3">
-                    Nội thành tinh / Tp A ↔ Ngoại thành tỉnh / Tp B
+                    <FormattedMessage id="PriceList.MainPage.option3.subTitle4.head4" />
                   </th>
                   <th className="text-s font-normal text-black border border-black px-6 py-3">
-                    36 Giờ
+                    36h
                   </th>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div className="textTitleSmall mt-5">5. Ghi chú</div>
+          <div className="textTitleSmall mt-5">
+            <FormattedMessage id="PriceList.MainPage.option3.subTitle5" />
+          </div>
           <div>
             <div className="mt-5 text-justify">
               <FormattedMessage id="PriceList.MainPage.option1.subTitle1.warning1" />
               <br />
-              • Chỉ tiêu thời gian toàn trình: <br />
-              ✓ Đối với tuyến huyện, xã không thuộc vùng sâu, vùng xa (Ngoại
-              thành). Giá cước áp dụng bảng giá cước nêu tại Mục 1của bảng giá
-              này và được cộng thêm 20% so với giá cước đã nêu tại Mục 1 <br />✓
-              Đối với tuyến huyện, xã thuộc vùng sâu, vùng xa khách hàng sử dụng
-              dịch vụ chuyển phát và có sự thỏa thuận, đồng ý trước giữa Công ty
-              và Người sử dụng dịch vụ về giá cước và thời gian toàn trình nhưng
-              vẫn đảm bảo các quy định của pháp luật hiện hành <br />
-              • Đối với các tỉnh, thành phố khác không nằm trong bảng địa danh
-              đã nêu tại mục 2 của bảng giá này. Giá cước và thời gian phát công
-              ty và khách hàng sẽ thỏa thuận cụ thể. <br />
-              • Hàng hóa cồng kềnh quy đổi theo công thức: Số đo (cm): Dài x
-              Rộng x Cao ÷ 6000 = Trọng lượng kg <br />• Bảng giá trên chưa bao
-              gồm phụ phí nhiên liệu và 10 % thuế VAT .
+              <FormattedMessage id="PriceList.MainPage.option3.subTitle5.warning1" />
+              <br />
+              <FormattedMessage id="PriceList.MainPage.option3.subTitle5.warning2" />
+              <br />
+              <FormattedMessage id="PriceList.MainPage.option3.subTitle5.warning3" />
+              <br />
+              <FormattedMessage id="PriceList.MainPage.option3.subTitle5.warning4" />{" "}
+              <br />
+              <FormattedMessage id="PriceList.MainPage.option3.subTitle5.warning5" />
+              <br />
+              <FormattedMessage id="PriceList.MainPage.option3.subTitle5.warning6" />
             </div>
           </div>
         </div>
