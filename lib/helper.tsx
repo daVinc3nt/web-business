@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:3000/api/posts";
+const baseURL = "https://web-business.app/api/posts";
 
 export default async function getPost(id: number|null) {
   try {
