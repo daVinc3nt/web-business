@@ -99,10 +99,51 @@
     "PriceList.MainPage.option2.subTitle3.warning9": " + Trọng lượng được quy đổi theo công thức: Số đo (cm): (Dài x Rộng x Cao) ÷ 6000 = Trọng lượng( kg). ",
     "PriceList.MainPage.option2.subTitle3.warning10": "+ Giá trên chưa bao gồm phụ phí nhiên liệu và 10% thuế VAT. ",
     
-    
-    
-    
-    "PriceList.MainPage.option3": "BẢNG GIÁ DỊCH VỤ CHUYỂN PHÁT HỎA TỐC"
+    "PriceList.MainPage.option3": "BẢNG GIÁ DỊCH VỤ CHUYỂN PHÁT HỎA TỐC",
+    "PriceList.MainPage.option3.subTitle1": "1. Bảng giá chuyển phát hỏa tốc: ",
+    "PriceList.MainPage.option3.subTitle1.sub1": "Áp dụng cho tất cả các địa chỉ phát tại các thành phố là trung tâm hành chính thuộc các tỉnh/ thành phố trực thuộc trung ương trên toàn quốc và Đảo Phú Quốc thuộc tỉnh Kiên Giang, Đảo Côn Đảo thuộc tỉnh Bà Rịa-Vũng Tàu.",
+    "PriceList.MainPage.option3.subTitle1.option1": "Khu vực:",
+    "PriceList.MainPage.option3.subTitle1.option2": "Trọng lượng (gram)",
+    "PriceList.MainPage.option3.subTitle1.option3": "Tỉnh cách TP Hà Nội ≤100 Km",
+    "PriceList.MainPage.option3.subTitle1.option4": "Tỉnh cách TP Hồ Chí Minh ≤ 100Km",
+    "PriceList.MainPage.option3.subTitle1.option5": "Tỉnh bay thẳng",
+    "PriceList.MainPage.option3.subTitle1.option6": "TP. Hà Nội",
+    "PriceList.MainPage.option3.subTitle1.option7": "TP. Hồ Chí Minh",
+    "PriceList.MainPage.option3.subTitle1.option8": "TP. Đà Nẵng",
+    "PriceList.MainPage.option3.subTitle1.row1": " 0,5 kg tiếp theo",
 
+    "PriceList.MainPage.option3.subTitle1.table.head1": "Đối với tỉnh/Tp cách Hà Nội ≤ 100 Km ",
+    "PriceList.MainPage.option3.subTitle1.table.head2": "Đối với tỉnh/Tp cách Hồ Chí Minh ≤ 100 Km",
+    "PriceList.MainPage.option3.subTitle1.table.head3": "Đối với tỉnh bay thẳng (nhận bưu gửi tại Hà Nội & tỉnh cách Hà Nội ≤ 100 Km)",
+    "PriceList.MainPage.option3.subTitle1.table.head4": "Đối với tỉnh bay thẳng (nhận bưu gửi tại Hồ Chí Minh & tỉnh cách Hồ Chí Minh ≤ 100 Km)",
+    "PriceList.MainPage.option3.subTitle1.table.head5": "Đối với tỉnh bay thẳng (nhận bưu gửi tại Đà Nẵng & tỉnh cách Đà Nẵng ≤ 100 Km)",
+    
+    "PriceList.MainPage.option3.subTitle3": "3. Quy định chi tiết địa danh nội thành – ngoại thành như sau: ",
+    "PriceList.MainPage.option3.subTitle3.table.head1": "Các tỉnh còn lại nêu tại mục 2",
+    "PriceList.MainPage.option3.subTitle3.table.row3": "Thành phố/ thị xã thuộc TT hành chính Tỉnh/ Thành phố",
+    "PriceList.MainPage.option3.subTitle3.table.row4": "Các Thành phố, Thị xã, Trung tâm Huyện còn lại.",
+
+    "PriceList.MainPage.option3.subTitle3.table.row1": "Nội thành",
+    "PriceList.MainPage.option3.subTitle3.table.row2": "Ngoại thành",
+
+    "PriceList.MainPage.option3.subTitle3.table.row5": "Quận 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, Bình Thạnh, Tân Bình, Phú Nhuận, Gò Vấp",
+    "PriceList.MainPage.option3.subTitle3.table.row6": "Quận 9, Hoóc Môn, Quận 12, Nhà Bè, Bình Tân, Bình Chánh, Thủ Đức, huyện Củ Chi, Cần Giờ",
+
+    "PriceList.MainPage.option3.subTitle4": "4. Thời gian toàn trình:",
+    "PriceList.MainPage.option3.subTitle4.sub1": "Địa danh nhận và phát",
+    "PriceList.MainPage.option3.subTitle4.sub2": "Thời gian",
+    "PriceList.MainPage.option3.subTitle4.head1": "Nội Thành ↔ Nôi thành cùng một tỉnh/Tp ",
+    "PriceList.MainPage.option3.subTitle4.head2": "Nội Thành ↔ Ngoại thành cùng một tỉnh/Tp ",
+    "PriceList.MainPage.option3.subTitle4.head3": "Nội thành tỉnh / Tp A ↔ Nội thành tỉnh / Tp  B ",
+    "PriceList.MainPage.option3.subTitle4.head4": "Nội thành tỉnh / Tp A ↔ Ngoại thành tỉnh / Tp  B ",
+
+
+    "PriceList.MainPage.option3.subTitle5": "5. Ghi chú",
+    "PriceList.MainPage.option3.subTitle5.warning1": "• Chỉ tiêu thời gian toàn trình: ",
+    "PriceList.MainPage.option3.subTitle5.warning2":"✓ Đối với tuyến huyện, xã không thuộc vùng sâu, vùng xa (Ngoại thành). Giá cước áp dụng bảng giá cước nêu tại Mục 1của bảng giá này và được cộng thêm 20% so với giá cước đã nêu tại Mục 1 ",
+    "PriceList.MainPage.option3.subTitle5.warning3":"✓ Đối với tuyến huyện, xã thuộc vùng sâu, vùng xa khách hàng sử dụng dịch vụ chuyển phát và có sự thỏa thuận, đồng ý trước giữa Công ty và Người sử dụng dịch vụ về giá cước và thời gian toàn trình nhưng vẫn đảm bảo các quy định của pháp luật hiện hành ",
+    "PriceList.MainPage.option3.subTitle5.warning4":"• Đối với các tỉnh, thành phố khác không nằm trong bảng địa danh đã nêu tại mục 2 của bảng giá này. Giá cước và thời gian phát công ty và khách hàng sẽ thỏa thuận cụ thể. ",
+    "PriceList.MainPage.option3.subTitle5.warning5":"• Hàng hóa cồng kềnh quy đổi theo công thức: Số đo (cm): Dài x Rộng x Cao ÷ 6000 = Trọng lượng kg ",
+    "PriceList.MainPage.option3.subTitle5.warning6":"• Bảng giá trên chưa bao gồm phụ phí nhiên liệu và 10 % thuế VAT . "
 }
  
