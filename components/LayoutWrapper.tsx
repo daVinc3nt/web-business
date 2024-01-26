@@ -1,5 +1,5 @@
 import React, { ReactNode, useState } from "react";
-import Navbar from "./nav/nav";
+import Navbar from "./Nav/nav"
 import Footer from "./Footer/footer";
 interface LayoutProps {
   children: ReactNode;
