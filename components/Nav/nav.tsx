@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import LangSelector from "../LangSelector/LangSelector";
 import { FormattedMessage, useIntl } from "react-intl"
 import MenuHambuger from "./MenuHambuger";
+import Sidebar from "./common/Sidebar";
 const Navbar = () => {
   const intl = useIntl();
 
@@ -83,27 +84,32 @@ const Navbar = () => {
     window.addEventListener("scroll", changeColor);
   }, []);
   return (
-    <div
-      style={{ backgroundColor: `${color}` }}
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
-    >
-      <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
-        <Link href="/">
-          <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
-            TDLogistics
-          </h1>
-        </Link>
-        <ul style={{ color: `${textColor}` }} className="hidden sm:flex gap-5">
-          {menuItemsData.map((menu, index) => {
-            return (<MenuItems items={menu} key={index} depthLevel={0} textColor={textColor} />);
-          })}
-        </ul>
-        <div className="flex items-center">
-          <LangSelector IconColor={textColor}/>
-          <MenuHambuger  toggle ={handleNav}/>
+    <>
+      <div
+        style={{ backgroundColor: `${color}` }}
+        className="hidden lg:block fixed left-0 top-0 w-full z-10 ease-in duration-300"
+      >
+        <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
+          <Link href="/">
+            <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
+              TDLogistics
+            </h1>
+          </Link>
+          <ul style={{ color: `${textColor}` }} className="hidden sm:flex gap-5">
+            {menuItemsData.map((menu, index) => {
+              return (<MenuItems items={menu} key={index} depthLevel={0} textColor={textColor} />);
+            })}
+          </ul>
+          <div className="flex items-center">
+            <LangSelector IconColor={textColor}/>
+            <MenuHambuger  toggle ={handleNav}/>
           </div>
+        </div>
       </div>
-    </div>
+      <div className="block lg:hidden">
+        <Sidebar menuItems={menuItemsData} />
+      </div>
+    </>
   );
 };
 
