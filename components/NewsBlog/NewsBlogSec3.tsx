@@ -5,13 +5,15 @@ import "react-multi-carousel/lib/styles.css";
 import { TbChevronsLeft, TbChevronsRight } from "react-icons/tb";
 import Link from "next/link";
 import getPost from "@/lib/helper";
+import Posts from "@/pages/api/data";
 
 const NewsBlogSec3 = ({category, id, title}) => {
   const refSec3 = useRef(null);
   const isInView = useInView(refSec3, { once: true });
   const mainControls = useAnimation();
   const slideControls = useAnimation();
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
+  const data = Posts;
   const [breakpoint, setBreakpoint] = useState("res1");
   const sortPosts = category == "all" ? data: data.filter(post => post.category.includes(category));
   useEffect(() => {
@@ -37,11 +39,11 @@ const NewsBlogSec3 = ({category, id, title}) => {
 
   const breakpoints = { res1: 1, res2: 2, res3: 3, res4: 5 };
 
-  useEffect(() => {
-    getPost(null).then((res) => {
-      setData(res);
-    });
-  }, []);
+  // useEffect(() => {
+  //   getPost(null).then((res) => {
+  //     setData(res);
+  //   });
+  // }, []);
 
   useEffect(() => {
     if (isInView) {

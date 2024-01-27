@@ -4,6 +4,7 @@ import getPost from '../../lib/helper';
 import { useState, useEffect } from 'react';
 import BlogPost from '../../components/NewsBlog/NewsPost/BlogPost';
 import { Bitter } from 'next/font/google';
+import Posts from '../api/data';
 
 const bitter = Bitter({ subsets: ['latin'] });
 
@@ -14,14 +15,15 @@ interface PageProps {
 const Page: React.FC<PageProps> = ({ fallback }) => {
   const router = useRouter();
   const { postId } = router.query;
-  const [data, setData] = useState(null);
+  const data = Posts[postId as string];
+  // const [data, setData] = useState(null);
 
-  useEffect(() => {
-    getPost(parseFloat(postId as string)).then((res) => {
-      setData(res);
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // useEffect(() => {
+  //   getPost(parseFloat(postId as string)).then((res) => {
+  //     setData(res);
+  //   });
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   if (!data) return <div></div>;
 
@@ -35,7 +37,8 @@ const Page: React.FC<PageProps> = ({ fallback }) => {
 };
 
 export const getStaticProps: GetStaticProps<PageProps> = async ({ params }) => {
-  const posts = await getPost(parseFloat(params?.postId as string));
+  // const posts = await getPost(parseFloat(params?.postId as string));
+  const posts = Posts[parseFloat(params?.postId as string)];
 
   return {
     props: {
@@ -47,7 +50,8 @@ export const getStaticProps: GetStaticProps<PageProps> = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const posts = await getPost(null);
+  // const posts = await getPost(null);
+  const posts = Posts;
 
   const paths = posts.flatMap((value) => [
     {

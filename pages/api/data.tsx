@@ -1,6 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-export default {  
-    Posts : [
+const Posts = [
         {
             id: 1,
             title: "ƯU ĐÃI ĐẾN 50K KHI NẠP TIỀN QUA VNPAY-QR",
@@ -931,6 +930,6 @@ export default {
                 designation : "CEO and Founder"
             }
         },
-    ],
-}
+    ];
 
+export default Posts;
