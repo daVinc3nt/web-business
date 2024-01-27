@@ -1,6 +1,6 @@
 import { motion, useCycle } from 'framer-motion';
 
-const MenuToggle = ({ toggle1, toggle2 }: { toggle1: any, toggle2: any }) => {
+const MenuToggle = ({ toggle1, toggle2, IconColor }: { toggle1: any, toggle2: any, IconColor:string }) => {
   const handleClick = () => {
     toggle1();
     toggle2();
@@ -17,6 +17,7 @@ const MenuToggle = ({ toggle1, toggle2 }: { toggle1: any, toggle2: any }) => {
             closed: { d: 'M 2 2.5 L 20 2.5' },
             open: { d: 'M 3 16.5 L 17 2.5' },
           }}
+          color={IconColor}
         />
         <Path
           d="M 2 9.423 L 20 9.423"
@@ -25,12 +26,14 @@ const MenuToggle = ({ toggle1, toggle2 }: { toggle1: any, toggle2: any }) => {
             open: { opacity: 0 },
           }}
           transition={{ duration: 0.1 }}
+          color={IconColor}
         />
         <Path
           variants={{
             closed: { d: 'M 2 16.346 L 20 16.346' },
             open: { d: 'M 3 2.5 L 17 16.346' },
           }}
+          color={IconColor}
         />
       </svg>
     </button>
@@ -41,7 +44,7 @@ const MenuToggle = ({ toggle1, toggle2 }: { toggle1: any, toggle2: any }) => {
     <motion.path
       fill="transparent"
       strokeWidth="2"
-      stroke="white"
+      stroke={props.color}
       strokeLinecap="round"
       {...props}
     />

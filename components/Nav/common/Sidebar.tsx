@@ -1,42 +1,47 @@
 import { Avatar, Drawer, List, Stack, Toolbar } from "@mui/material";
 import SidebarItem from "./SidebarItem";
 import SidebarItemCollapse from "./SidebarItemCollapse";
+import { motion, Variants } from "framer-motion";
+import classNames from "classnames";
 interface MenuItem {
   title: string;
   url: string;
   submenu?: MenuItem[];
 }
 
-interface MenuProps {
+interface Props {
   menuItems: MenuItem[];
+  toggleCollapseMobile: boolean;
 }
 
-const Sidebar: React.FC<MenuProps>  = ({menuItems}) => {
+const Sidebar: React.FC<Props>  = ({menuItems,toggleCollapseMobile}) => {
   return (
     <Drawer
-      variant="permanent"
-      sx={{
-        width: "300px",
-        flexShrink: 0,
-        "& .MuiDrawer-paper": {
+        sx={{
           width: "300px",
-          boxSizing: "border-box",
-          borderRight: "0px",
-          backgroundColor: "#233044",
-          color: "#eeeeee"
-        }
-      }}
-    >
-      <List disablePadding>
-        {menuItems.map((menu, index) => (
-            menu.submenu? (
-              <SidebarItemCollapse title={menu.title} url={menu.url} submenu={menu.submenu} key={index} />
-            ) : (
-              <SidebarItem  title={menu.title} url={menu.url} submenu={menu.submenu} key={index} />
-            )
-        ))}
-      </List>
-    </Drawer>
+          flexShrink: 0,
+          '& .MuiDrawer-paper': {
+            width: "px",
+            boxSizing: 'border-box',
+            backgroundColor: "#DDDDDD",
+            opacity:0.97,
+            color: "#000000"
+          },
+        }}
+        variant="persistent"
+        anchor="left"
+        open={toggleCollapseMobile}
+      >
+        <List disablePadding>
+          {menuItems.map((menu, index) => (
+              menu.submenu? (
+                <SidebarItemCollapse title={menu.title} url={menu.url} submenu={menu.submenu} key={index} />
+              ) : (
+                <SidebarItem  title={menu.title} url={menu.url} submenu={menu.submenu} key={index} />
+              )
+          ))}
+        </List>
+      </Drawer>
   );
 };
 

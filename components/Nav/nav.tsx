@@ -8,7 +8,10 @@ import MenuHambuger from "./MenuHambuger";
 import Sidebar from "./common/Sidebar";
 const Navbar = () => {
   const intl = useIntl();
-
+  const [toggleCollapseMobile, setToggleCollapseMobile] = useState(true);
+  const handleSidebarToggleMobile = () => {
+    setToggleCollapseMobile(!toggleCollapseMobile);
+  };
   //things shall be on navbar menu
   const menuItemsData = [
     {
@@ -62,14 +65,9 @@ const Navbar = () => {
   ];
   //
 
-  
-  const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
   const [textColor, setTextColor] = useState("white");
 
-  const handleNav = () => {
-    setNav(!nav);
-  };
 
   useEffect(() => {
     const changeColor = () => {
@@ -87,27 +85,27 @@ const Navbar = () => {
     <>
       <div
         style={{ backgroundColor: `${color}` }}
-        className="hidden lg:block fixed left-0 top-0 w-full z-10 ease-in duration-300"
+        className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
       >
-        <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
+        <div className=" max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
           <Link href="/">
-            <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
+            <h1 style={{ color: `${textColor}` }} className="font-bold text-xl xs:text-4xl">
               TDLogistics
             </h1>
           </Link>
-          <ul style={{ color: `${textColor}` }} className="hidden sm:flex gap-5">
+          <ul style={{ color: `${textColor}` }} className="hidden lg:flex gap-5">
             {menuItemsData.map((menu, index) => {
               return (<MenuItems items={menu} key={index} depthLevel={0} textColor={textColor} />);
             })}
           </ul>
           <div className="flex items-center">
             <LangSelector IconColor={textColor}/>
-            <MenuHambuger  toggle ={handleNav}/>
+            <MenuHambuger IconColor={textColor} toggle ={handleSidebarToggleMobile}/>
           </div>
         </div>
       </div>
       <div className="block lg:hidden">
-        <Sidebar menuItems={menuItemsData} />
+        <Sidebar menuItems={menuItemsData} toggleCollapseMobile={toggleCollapseMobile} />
       </div>
     </>
   );

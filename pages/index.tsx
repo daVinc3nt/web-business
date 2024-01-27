@@ -8,6 +8,7 @@ import Portfolio from "../components/Portfolio/Portfolio";
 import Contact from "../components/Contact/Contact";
 import { useIntl } from "react-intl";
 import Zigzag from "@/components/Zigzag/zigzag";
+import siteMetadata from "@/data/SiteMetaData";
 const Home: NextPage = () => {
   const intl = useIntl();
   return (
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
           name="description"
           content="Created as template for future work"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={siteMetadata.logo} />
       </Head>
       <Hero heading={intl.formatMessage({ id: 'NavBar.home.hello' })} 
             message={intl.formatMessage({ id: 'NavBar.home.sologan' })} />

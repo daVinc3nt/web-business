@@ -14,6 +14,7 @@
     "@mui/icons-material": "^5.15.6",
     "@mui/material": "^5.15.5",
     "aos": "^3.0.0-beta.6",
+    "classnames": "^2.5.1",
     "flowbite": "^2.2.1",
     "framer-motion": "^10.18.0",
     "next": "^14.0.2",

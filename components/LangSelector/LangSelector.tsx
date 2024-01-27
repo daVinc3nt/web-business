@@ -78,7 +78,7 @@ const Option = ({ text, Icon, handle }) => {
       variants={itemVariants}
       transition={{ duration: 0.1 }}
       onClick={() => { handle(text) }}
-      className="flex z-50 items-center gap-2 w-full py-2 text-xs font-medium whitespace-nowrap rounded-lg hover:bg-indigo-100 text-slate-700 hover:text-indigo-500 transition-colors cursor-pointer"
+      className="flex z-50 items-center gap-2 w-full py-2 text-xs font-medium whitespace-nowrap rounded-lg hover:bg-indigo-100 text-slate-700 hover:text-slate-500 transition-colors cursor-pointer"
     >
       <motion.span variants={actionIconVariants} >
       </motion.span>

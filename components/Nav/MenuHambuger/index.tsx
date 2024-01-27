@@ -1,10 +1,8 @@
 import { useState,useRef } from 'react'
 import  MenuToggle  from './MenuToggle'
 import { motion, useCycle } from 'framer-motion';
-type MenuItemWithSubMenuProps = {
-    toggleOpen: () => void;
-  };
-const MenuHambuger = ({ toggle }: { toggle: any }) => {
+
+const MenuHambuger = ({ toggle, IconColor }: { toggle: any, IconColor: string}) => {
     const [isOpen, toggleOpen] = useCycle(true, false);
     const containerRef = useRef(null);
     return (
@@ -16,7 +14,7 @@ const MenuHambuger = ({ toggle }: { toggle: any }) => {
             }`}
         ref={containerRef}
         >
-        <MenuToggle toggle1={toggleOpen} toggle2={toggle} />
+        <MenuToggle IconColor={IconColor} toggle1={toggleOpen} toggle2={toggle} />
         </motion.nav>
     )
 }

@@ -140,5 +140,21 @@
   "PriceList.MainPage.option3.subTitle5.warning3": "✓ For routes in districts, communes in remote or faraway areas where customers use express delivery services and agree in advance between the company and the service user on the fare and transit time while still ensuring compliance with current legal regulations.",
   "PriceList.MainPage.option3.subTitle5.warning4": "• For other provinces, cities not listed in the specified locations in item 2 of this price list. The shipping fee and delivery time will be specifically negotiated between the company and the customer.",
   "PriceList.MainPage.option3.subTitle5.warning5": "• Bulky goods are converted using the formula: Measurement (cm): Length x Width x Height ÷ 6000 = Weight (kg)",
-  "PriceList.MainPage.option3.subTitle5.warning6": "• The above price list does not include fuel surcharge and 10% VAT."
+  "PriceList.MainPage.option3.subTitle5.warning6": "• The above price list does not include fuel surcharge and 10% VAT.",
+
+  "Footer.block1.line1":"Services",
+  "Footer.block1.line2":"For business",
+  "Footer.block1.line3":"For individual customers",
+
+  "Footer.block2.line1":"Our websites",
+  "Footer.block2.line2":"TD's landing page",
+  "Footer.block2.line3":"For TD's driver",
+  "Footer.block2.line4":"For TD's customers",
+
+  "Footer.block3.line1":"Company",
+  "Footer.block3.line2":"Head office: ",
+  "Footer.block3.line3":"Contact number: ",
+  "Footer.block3.line4":"Email: "
+
+
 }

@@ -144,6 +144,21 @@
     "PriceList.MainPage.option3.subTitle5.warning3":"✓ Đối với tuyến huyện, xã thuộc vùng sâu, vùng xa khách hàng sử dụng dịch vụ chuyển phát và có sự thỏa thuận, đồng ý trước giữa Công ty và Người sử dụng dịch vụ về giá cước và thời gian toàn trình nhưng vẫn đảm bảo các quy định của pháp luật hiện hành ",
     "PriceList.MainPage.option3.subTitle5.warning4":"• Đối với các tỉnh, thành phố khác không nằm trong bảng địa danh đã nêu tại mục 2 của bảng giá này. Giá cước và thời gian phát công ty và khách hàng sẽ thỏa thuận cụ thể. ",
     "PriceList.MainPage.option3.subTitle5.warning5":"• Hàng hóa cồng kềnh quy đổi theo công thức: Số đo (cm): Dài x Rộng x Cao ÷ 6000 = Trọng lượng kg ",
-    "PriceList.MainPage.option3.subTitle5.warning6":"• Bảng giá trên chưa bao gồm phụ phí nhiên liệu và 10 % thuế VAT . "
+    "PriceList.MainPage.option3.subTitle5.warning6":"• Bảng giá trên chưa bao gồm phụ phí nhiên liệu và 10 % thuế VAT . ",
+
+    "Footer.block1.line1":"Dịch vụ",
+    "Footer.block1.line2":"Dành cho doanh nghiệp",
+    "Footer.block1.line3":"Dành cho khách hàng cá nhân",
+
+    "Footer.block2.line1":"Các trang web",
+    "Footer.block2.line2":"Trang TD's Logistics",
+    "Footer.block2.line3":"Dành cho tài xế",
+    "Footer.block2.line4":"Dành cho khách hàng của TD",
+
+    "Footer.block3.line1":"Công ty",
+    "Footer.block3.line2":"Trụ sở chính: ",
+    "Footer.block3.line3":"Số điện thoại: ",
+    "Footer.block3.line4":"Email: "
+
 }
  

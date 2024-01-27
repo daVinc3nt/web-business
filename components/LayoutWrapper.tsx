@@ -8,10 +8,6 @@ interface LayoutProps {
 //component or any fragment
 
 const Wrapper = ({ children }: LayoutProps) => {
-  const [toggleCollapseMobile, setToggleCollapseMobile] = useState(false);
-  const handleSidebarToggleMobile = () => {
-    setToggleCollapseMobile(!toggleCollapseMobile);
-  };
   return (
     <div className="flex flex-col">
         <Navbar/>
