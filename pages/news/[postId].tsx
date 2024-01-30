@@ -15,7 +15,7 @@ interface PageProps {
 const Page: React.FC<PageProps> = ({ fallback }) => {
   const router = useRouter();
   const { postId } = router.query;
-  const data = Posts[postId as string];
+  const data = Posts[parseFloat(postId as string) - 1];
   // const [data, setData] = useState(null);
 
   // useEffect(() => {
