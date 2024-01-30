@@ -12,7 +12,7 @@ module.exports = {
         s : '425px',
       },
       backgroundImage: {
-        mainpage: 'url("/blog7.jpg")',
+        mainpage: 'url("/Blog7.jpg")',
       },
       colors:{
         newsBgColor:{

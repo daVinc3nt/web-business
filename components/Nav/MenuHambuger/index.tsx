@@ -8,7 +8,7 @@ const MenuHambuger = ({ toggle, IconColor }: { toggle: any, IconColor: string}) 
     return (
         <motion.nav
         initial={false}
-        animate={isOpen ? 'open' : 'closed'}
+        animate={isOpen ? 'closed' : 'open'}
         className={`w-full z-50 xl:hidden ${
             isOpen ? '' : 'pointer-events-none'
             }`}

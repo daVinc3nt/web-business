@@ -8,7 +8,7 @@ import MenuHambuger from "./MenuHambuger";
 import Sidebar from "./common/Sidebar";
 const Navbar = () => {
   const intl = useIntl();
-  const [toggleCollapseMobile, setToggleCollapseMobile] = useState(true);
+  const [toggleCollapseMobile, setToggleCollapseMobile] = useState(false);
   const handleSidebarToggleMobile = () => {
     setToggleCollapseMobile(!toggleCollapseMobile);
   };
