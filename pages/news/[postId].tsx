@@ -43,7 +43,7 @@ export const getStaticProps: GetStaticProps<PageProps> = async ({ params }) => {
   return {
     props: {
       fallback: {
-        '/api/posts': posts,
+       
       },
     },
   };
