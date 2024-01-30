@@ -15,7 +15,7 @@ const SidebarItem: React.FC<MenuItem>  = (menuItems) => {
         href={menuItems.url}
         sx={{
           "&: hover": {
-            backgroundColor: "#1e293a"
+            backgroundColor: "#a9aaa9"
           },
           paddingY: "12px",
           paddingX: "24px"
