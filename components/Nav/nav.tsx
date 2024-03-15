@@ -25,7 +25,7 @@ const Navbar = () => {
       submenu: [
         {
           title: intl.formatMessage({ id: 'NavBar.serv.subroute1' }),
-          url: "/transport",
+          url: "https://app.tdlogistics.net.vn",
         },
         {
           title: intl.formatMessage({ id: 'NavBar.serv.subroute2' }),
@@ -40,7 +40,7 @@ const Navbar = () => {
       submenu: [
         {
           title: intl.formatMessage({ id: 'NavBar.enroll.subroute1' }),
-          url: "/driver", //this will be connect to another url driver website
+          url: "https://delivery.tdlogistics.net.vn", //this will be connect to another url driver website
         },
         {
           title: intl.formatMessage({ id: 'NavBar.enroll.subroute2' }),
