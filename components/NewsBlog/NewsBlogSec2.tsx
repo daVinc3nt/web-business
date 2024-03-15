@@ -10,7 +10,7 @@ const Slide = () => {
   // useEffect(() => {
   //   getPost(1).then((res) => {setData(res)});
   // }, []);
-  const data = Posts[1];
+  const data = Posts[0];
   return (
       <Link href={`/news/${1}`} className="flex h-full justify-between flex-col lg:flex-row hover:bg-gray-300/70 lg:p-4 rounded-2xl">
           <div className="image h-1/3 lg:h-full lg:w-[30%]">
